@@ -1,18 +1,27 @@
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!system/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+# OS files
+.DS_Store
+Thumbs.db
 
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
+# IDEs
+.vscode/
+.idea/
 
-#codeigniter 3
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
-/vendor/
+# Logs generales del proyecto
+*.log
+
+# Backend (CodeIgniter 3)
+backend/application/logs/
+backend/system/cache/
+backend/writable/   # por si agregás algo futuro
+backend/vendor/
+
+# Composer (si algún día lo corrés en root accidentalmente)
+vendor/
+
+# Environment files
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.cache
